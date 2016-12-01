@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.Double?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+
+<fx:root id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="56.0" prefWidth="56.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Circle fx:id="collar" fill="RED" layoutX="26.0" layoutY="26.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0" radius="4.75" width="0.0" />
+         </effect></Circle>
+      <Circle fill="#a8abae" layoutX="26.0" layoutY="26.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fx:id="buttonIndication" fill="WHITE" layoutX="26.0" layoutY="26.0" radius="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <effect>
+            <InnerShadow />
+         </effect></Circle>
+      <Group fx:id="rotation" layoutX="-4.0" layoutY="36.0">
+         <children>
+            <Polygon fx:id="rightArrow" fill="TRANSPARENT" layoutX="38.0" rotate="90.0" scaleX="0.2" scaleY="0.1" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0">
+              <points>
+                <Double fx:value="-50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-60.0" />
+              </points>
+            </Polygon>
+            <Polygon fx:id="leftArrow" fill="TRANSPARENT" layoutX="24.0" rotate="90.0" scaleX="0.2" scaleY="0.1" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0">
+               <points>
+                  <Double fx:value="-50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="0.0" />
+                  <Double fx:value="-60.0" />
+               </points>
+            </Polygon>
+            <Polygon fx:id="centreArrow" fill="TRANSPARENT" layoutX="31.0" layoutY="1.0" rotate="90.0" scaleX="0.2" scaleY="0.1" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0">
+               <points>
+                  <Double fx:value="-50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="0.0" />
+                  <Double fx:value="-60.0" />
+               </points>
+            </Polygon>
+            <Circle fx:id="clickTarget" fill="TRANSPARENT" layoutX="30.0" layoutY="-10.0" radius="28.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" />
+         </children>
+      </Group>
+   </children>
+</fx:root>

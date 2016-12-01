@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<fx:root id="AnchorPane" prefHeight="119.0" prefWidth="100.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+       <Circle layoutX="50.0" layoutY="84.5" radius="22.0" stroke="BLACK" strokeType="INSIDE">
+         <effect>
+            <DropShadow height="6.17" offsetX="2.5" offsetY="2.5" radius="2.585" spread="0.17" width="6.17" />
+         </effect></Circle>
+      <Circle fx:id="centreIndication" fill="WHITE" layoutX="50.0" layoutY="46.0" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+         <effect>
+            <DropShadow height="9.14" offsetX="2.0" offsetY="2.0" radius="3.3275" width="6.17" />
+         </effect>
+      </Circle>
+      <Circle fx:id="normalIndication" fill="WHITE" layoutX="21.0" layoutY="53.0" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+         <effect>
+            <DropShadow height="9.14" offsetX="2.0" offsetY="2.0" radius="3.3275" width="6.17" />
+         </effect></Circle>
+      <Circle fx:id="reverseIndication" fill="WHITE" layoutX="79.0" layoutY="53.0" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+         <effect>
+            <DropShadow height="9.14" offsetX="2.0" offsetY="2.0" radius="3.3275" width="6.17" />
+         </effect></Circle>
+      <Label layoutX="16.0" layoutY="22.0" text="N" />
+      <Label layoutX="75.0" layoutY="22.0" text="R" />
+      <Label fx:id="pointIdentity" alignment="CENTER" contentDisplay="CENTER" layoutX="39.0" layoutY="7.0" text="940" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Circle fill="#2f3336" layoutX="50.0" layoutY="84.5" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle layoutX="50.0" layoutY="84.5" radius="19.0" stroke="BLACK" strokeType="INSIDE" />
+        <Line fx:id="indicationLine" layoutX="50.0" layoutY="69.0" scaleZ="0.0" startY="31.0" stroke="WHITE" strokeWidth="3.5" />
+      <Circle fx:id="clickTarget" fill="TRANSPARENT" layoutX="50.0" layoutY="82.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+   </children>
+</fx:root>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+
+<fx:root id="AnchorPane" prefHeight="111.0" prefWidth="120.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Group fx:id="signalGroup" layoutX="8.0" layoutY="35.0">
+         <children>
+            <Line fx:id="orientationLineOne" endY="20.0" layoutY="21.0" strokeWidth="1.5" />
+            <Line fx:id="orientationLineTwo" endY="20.0" layoutY="-14.0" strokeWidth="1.5" visible="false" />
+            <Line endY="8.0" layoutY="9.5" strokeWidth="1.5" />
+            <Line endX="19.5" layoutX="1.0" layoutY="13.5" strokeWidth="1.5" />
+            <Line endX="19.5" layoutX="36.5" layoutY="13.5" strokeWidth="1.5" />
+            <Line fx:id="gapFiller" endX="54.0" layoutX="0.5" layoutY="13.5" strokeWidth="2.0" />
+            <Rectangle arcHeight="40.0" arcWidth="25.0" height="25.0" layoutX="48.75" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.5" width="51.0">
+               <effect>
+                  <GaussianBlur radius="0.5" />
+               </effect>
+            </Rectangle>
+            <Circle id="redAspect" fx:id="redAspect" fill="TRANSPARENT" layoutX="62.0" layoutY="13.5" radius="8.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" />
+            <Circle id="greenAspect" fx:id="greenAspect" fill="TRANSPARENT" layoutX="86.75" layoutY="13.5" radius="8.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" />
+            <Group fx:id="subSignalGroup" layoutX="16.25" visible="false">
+               <children>
+                  <Region layoutX="0.5" layoutY="0.5" prefHeight="25.0" prefWidth="25.0" style="-fx-background-radius: 0 15 0 0; -fx-background-color: BLACK;">
+                     <effect>
+                        <GaussianBlur radius="0.5" />
+                     </effect>
+                  </Region>
+                  <Circle fx:id="shuntAspect" fill="TRANSPARENT" layoutX="10.0" layoutY="13.5" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" />
+               </children>
+            </Group>
+            <Group fx:id="automatic" layoutX="20.0" layoutY="0.5" visible="false">
+               <children>
+                  <Region layoutX="0.5" layoutY="0.5" prefHeight="25.0" prefWidth="16.0" style="-fx-border-color: BLACK;">
+                     <effect>
+                        <GaussianBlur radius="0.5" />
+                     </effect>
+                  </Region>
+                  <Line endY="22.0" layoutX="8.5" layoutY="2.0" strokeWidth="3.0" />
+               </children>
+            </Group>
+            <Group fx:id="semi" layoutX="20.0" layoutY="0.5" visible="false">
+               <children>
+                  <Region layoutX="0.5" layoutY="0.5" prefHeight="25.0" prefWidth="16.0" style="-fx-border-color: BLACK;">
+                     <effect>
+                        <GaussianBlur radius="0.5" />
+                     </effect>
+                  </Region>
+                  <Line endY="11.0" layoutX="8.5" layoutY="2.0" strokeWidth="3.0" />
+               </children>
+            </Group>
+         </children>
+      </Group>
+   </children>
+</fx:root>

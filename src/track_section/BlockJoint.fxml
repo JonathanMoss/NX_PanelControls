@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.layout.StackPane?>
+
+<fx:root id="pane" fx:id="pane" type="StackPane" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Rectangle arcHeight="0.0" arcWidth="0.0" fill="BLACK" height="21" width="21" />
+    </children>
+</fx:root>
